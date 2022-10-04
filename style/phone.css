@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+html{
+    width: 99vw;
+}
+*{
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+    color: #ff004c;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+/* ************** PHONE*******************/
+
+#numberInput{
+    margin: auto;
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    text-align: center;
+    z-index: 10;
+    border: none;
+    outline: none;
+    font-size: 3rem;
+    letter-spacing: 2px;
+
+}
+
+.numberIcons{
+    box-shadow: 0px 0px 1000px 0px rgba(63, 0, 19, 0.705);
+    background-color: #3f001356;
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 260px;
+    z-index: 100;
+    width: 400px;
+
+}
+
+.numberIcons .eachNumberIcon{
+    background-color: #3f0013;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    margin: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+}
+
+.eachNumberIcon h3{
+    margin-bottom: 0;
+    margin-top: 9px;
+    font-size: 2.5rem;
+}
+.eachNumberIcon P{
+    margin: 0;
+    font-size: 0.9rem;
+}

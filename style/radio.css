@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+       
+body{
+    background-color: #F3B6A3;
+    padding: 5%;
+    margin: 0%;
+}
+
+.title p{
+    color: #E2592F;
+    margin: 0%;
+    width: max-content;
+    padding: 0%;
+    font-size: 5rem;
+    position: absolute;
+    top: 0%;
+    left: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-weight: 1000;
+    z-index: 1000;
+}
+
+.theme {
+    background-color: #E2592F;
+    display: inline-flex;
+    width: 2rem;
+    height: 2rem;
+    padding: 1rem;
+    border-radius: 50px;
+    position: absolute;
+    top: 1rem;
+    right: 0rem;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.theme:hover {
+    width: max-content;
+    transition-duration: 1s;
+    transition-property: width;
+}
+
+h1 {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    border-radius: 50%;
+
+    
+}
+
+h1:active{
+    border-width: 1.5px;
+    border-style: groove;
+    border-color: white;
+}
+
+.circle {
+    background-color: #ffffff27;
+    width: 40rem;
+    height: 40rem;
+    margin: auto;
+    border-radius: 50%;
+    padding: 0%;
+    box-shadow: inset 0px 0px 100px 0px rgb(255, 255, 255), 0px 0px 200px 0px rgb(255, 255, 255);
+    transition-duration: 2s;
+    justify-content: center;
+}
+
+#rotateCircle{
+    animation-name: circle0;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+@keyframes circle{
+    0%{box-shadow: inset 0px 0px 100px 0px white, 0px 0px 200px 0px white;
+        transform: rotateZ(0deg);}
+    50%{box-shadow: inset 0px 0px 50px 0px white, 0px 0px 100px 0px white;}
+    100%{box-shadow: inset 0px 0px 100px 0px white, 0px 0px 200px 0px white;
+        transform: rotateZ(360deg);}
+}
+
+
+.transparent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.transparent #musicBackground{
+    margin: auto;
+    border-radius: 50%;
+    width: 40rem;
+    height: 40rem;
+    filter: saturate(0);
+}
+
+
+
+
+.musicButtons{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 1%;
+    z-index: 1000;
+    opacity: 1;
+}
+.musicButtons img{
+    filter: saturate(0);
+    transition-duration: 2s;
+    cursor: pointer;
+}
+.musicButtons img:hover{
+    transform: translateY(-5px) scale(1.1);
+    transition-duration: 1s;
+    filter: saturate(2);
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio</title>
+    <link rel="stylesheet" href="./style/radio.css">
+</head>
+
+<body>
+    <div class="title">
+        <p>Radio</p>
+    </div>
+
+    <div class="theme" onmouseover="ontheme()" onmouseout="offtheme()">
+        <div class="themeOrange" onclick="theme('orange')" style="display: none;">
+            <h1 style="background-color: #E2592F;"> </h1>
+        </div>
+
+        <div class="themeGreen" onclick="theme('green')" style="display: none;">
+            <h1 style="background-color: #125462;"> </h1>
+        </div>
+
+        <div class="themeBlue" onclick="theme('blue')" style="display: none;">
+            <h1 style="background-color: #31376B;"> </h1>
+        </div>
+
+        <div class="themeDark" onclick="theme('dark')" style="display: none;">
+            <h1 style="background-color: #747474;"> </h1>
+        </div>
+
+    </div>
+
+    <div class="circle" id="rotateCircle">
+
+
+        <div class="transparent">
+            <img id="musicBackground" src="./images/music.jpg" alt="" ;">
+        </div>
+
+    </div>
+
+    <div class="musicButtons">
+        <img src="https://img.icons8.com/nolan/64/rewind.png"" width=" 64px" onclick="musicButton('back')">
+        <img style="display: block;" src="https://img.icons8.com/nolan/64/play.png" width="64px"
+            onclick="musicButton('play')">
+        <img style="display: none;" src="https://img.icons8.com/nolan/64/pause.png" width="64px"
+            onclick="musicButton('pause')">
+        <img src="https://img.icons8.com/nolan/64/fast-forward.png" width="64px" onclick="musicButton('next')">
+    </div>
+    <script src="./script/radio.js"></script>
+</body>
+
+</html>
